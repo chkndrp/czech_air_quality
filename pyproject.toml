@@ -52,3 +52,71 @@ docs = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pylint.main]
+py-version = "3.10"
+clear-cache-post-run = false
+persistent = true
+source-roots = ["src"]
+ignore-paths = ["docs"]
+load-plugins = [
+    "pylint.extensions.check_elif",
+    "pylint.extensions.docparams",
+    "pylint.extensions.for_any_all",
+    "pylint.extensions.set_membership",
+    "pylint.extensions.overlapping_exceptions",
+    "pylint.extensions.typing",
+    "pylint.extensions.comparison_placement",
+]
+
+[tool.pylint.messages_control]
+disable = [
+    "too-few-public-methods",
+    "too-many-statements",
+    "too-many-nested-blocks",
+    "too-many-branches",
+    "too-many-arguments",
+    "too-many-locals",
+    "too-many-positional-arguments",
+    "too-many-instance-attributes",
+    "undefined-variable",
+    "import-error",
+]
+
+[tool.pylint.basic]
+argument-naming-style = "snake_case"
+attr-naming-style = "snake_case"
+class-attribute-naming-style = "UPPER_CASE"
+class-const-naming-style = "UPPER_CASE"
+class-naming-style = "PascalCase"
+const-naming-style = "UPPER_CASE"
+function-naming-style = "snake_case"
+inlinevar-naming-style = "any"
+method-naming-style = "snake_case"
+module-naming-style = "snake_case"
+no-docstring-rgx = "__.*__"
+variable-naming-style = "snake_case"
+include-naming-hint = true
+
+[tool.pylint.classes]
+check-protected-access-in-special-methods = true
+exclude-protected = [
+    "_data_manager",
+    "_load_and_parse_data"
+]
+
+[tool.pylint.design]
+max-args = 6
+max-statements = 20
+max-branches = 10
+max-locals = 15
+
+[tool.pylint.similarities]
+min-similarity-lines = 4
+
+[tool.pylint.string]
+check-quote-consistency = true
+check-str-concat-over-line-jumps = true
+
+[tool.pylint.format]
+max-line-length = 120
