@@ -121,3 +121,6 @@ max-line-length = 120
 [tool.setuptools.packages.find]
 include = ["czech_air_quality*"]
 where = ["src"]
+
+[tool.setuptools.package-data]
+imagefv_extractor = ["py.typed"]
