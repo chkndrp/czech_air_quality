@@ -29,6 +29,7 @@ from czech_air_quality import AirQuality
 
 client = AirQuality()
 aqi_level, description = client.get_air_quality_index("Prague")
+
 print(f"AQI: {aqi_level} ({description})")
 # Output: "AQI: 3 (Moderate)"
 ```
