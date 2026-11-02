@@ -40,7 +40,10 @@ supports full typing hints:
 https://czech-air-quality.readthedocs.io
 
 ## Data Source
-Data from CHMI (Czech Hydrometeorological Institute) OpenData portal, updated hourly.
+Data from CHMI (Czech Hydrometeorological Institute) OpenData portal is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0), updated hourly.
 
 - Metadata: https://opendata.chmi.cz/air_quality/now/metadata/metadata.json
 - Measurements: https://opendata.chmi.cz/air_quality/now/data/airquality_1h_avg_CZ.csv
+
+## Disclaimer
+This project is not affiliated, associated or endorsed by CHMI (Czech Hydrometeorological Institute).
