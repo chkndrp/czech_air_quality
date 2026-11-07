@@ -1,11 +1,11 @@
 # czech_air_quality
 ![PyPI - Version](https://img.shields.io/pypi/v/czech_air_quality?logo=python&logoColor=white) ![PyPI - Downloads](https://img.shields.io/pypi/dm/czech_air_quality?logo=python&logoColor=white) ![PyPI - Typing](https://img.shields.io/pypi/types/czech_air_quality?logo=python&logoColor=white)
 
-Python library for retrieving and processing current air quality data from the CHMI `OpenData` portal, that provides data hourly.
+Python library for retrieving and processing current air quality data from the [CHMI `OpenData`](https://opendata.chmi.cz/) portal, that provides data hourly.
 
 Features:
 - Fetch air quality report/pollutant measurements and EAQI data of a location.
-- Resolve locations to the nearest physical weather station automatically using Nominatim.
+- Resolve locations to the nearest physical weather station automatically using [geopy](https://pypi.org/project/geopy/) ([nominatim](https://nominatim.org/)).
 - Ability to automatically fetch multiple close stations to get measurements of all pollutants at a location
 - Caching mechanism
 
